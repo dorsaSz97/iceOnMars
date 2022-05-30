@@ -1,0 +1,76 @@
+.scroll {
+  align-items: flex-end;
+  height: fit-content;
+  min-width: 50%;
+  padding: 3rem;
+  margin-left: auto;
+
+  &:hover .line {
+    width: 0%;
+  }
+
+  &__link {
+    font-family: 'Palace of Sports';
+    font-size: 2.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  &__arrow {
+    width: 100%;
+
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: rgba($color-white, 0.2);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .arrow {
+      .span {
+        display: inline-block;
+        width: 5rem;
+        height: 2px;
+        background-color: white;
+        margin-right: -2px;
+      }
+      img {
+        width: 17px;
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
+
+.mouseScroll {
+  display: inline-block;
+  width: 4rem;
+  height: 6rem;
+  border-radius: 50px;
+  background: linear-gradient(0deg, $color-white 50%, $color-grey-1 50%);
+  position: relative;
+
+  &__bg {
+    width: 3rem;
+    height: 5rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  &__dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $color-white;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: upanddownDot 0.5s linear alternate infinite;
+  }
+}

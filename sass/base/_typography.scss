@@ -1,0 +1,48 @@
+.paragraph {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  // font-weight: normal;
+  line-height: 1.55;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Palace of Sports', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+}
+
+// .heading-primary {
+// }
+
+.heading-secondary {
+  font-size: 8rem;
+  color: $color-heading-secondary;
+}
+.heading-tertiary {
+  font-size: 6.2rem;
+  text-align: center;
+  color: $color-white;
+}
+
+.subheading {
+  font-family: 'Inter';
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 1rem;
+}

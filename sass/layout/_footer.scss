@@ -1,0 +1,122 @@
+.footer {
+  padding-bottom: 4rem;
+
+  .border-container:nth-of-type(1) {
+    background-image: linear-gradient(
+        0deg,
+        transparent 5%,
+        $color-white 5%,
+        $color-white 95%,
+        transparent 95%
+      ),
+      // left
+      linear-gradient(
+          90deg,
+          transparent 5%,
+          $color-white 5%,
+          $color-white 95%,
+          transparent 95%
+        ),
+      // top
+      linear-gradient(
+          180deg,
+          transparent 5%,
+          $color-white 5%,
+          $color-white 95%,
+          transparent 95%
+        ),
+      // right
+      linear-gradient(270deg, transparent),
+      // bottom
+;
+  }
+  .border-container:nth-of-type(2) {
+    background-image: linear-gradient(0deg, transparent),
+      // left
+      linear-gradient(
+          90deg,
+          transparent 5%,
+          $color-white 5%,
+          $color-white 95%,
+          transparent 95%
+        ),
+      // top
+      linear-gradient(180deg, transparent),
+      // right
+      linear-gradient(270deg, transparent),
+      // bottom
+;
+  }
+  .border-container:nth-of-type(3) {
+    background-image: linear-gradient(
+        0deg,
+        transparent 5%,
+        $color-white 5%,
+        $color-white 95%,
+        transparent 95%
+      ),
+      // left
+      linear-gradient(
+          90deg,
+          transparent 5%,
+          $color-white 5%,
+          $color-white 95%,
+          transparent 95%
+        ),
+      // top
+      linear-gradient(
+          180deg,
+          transparent 5%,
+          $color-white 5%,
+          $color-white 95%,
+          transparent 95%
+        ),
+      // right
+      linear-gradient(270deg, transparent),
+      // bottom
+;
+  }
+
+  & > div:nth-of-type(2) {
+    flex-grow: 1;
+  }
+  &__menu {
+    gap: 8rem;
+    justify-content: space-evenly;
+
+    ul {
+      font-size: 1.8rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__scroll {
+    gap: 2rem;
+    .paragraph {
+      font-family: 'Palace of Sports';
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+
+  &__socials {
+    & > ul {
+      gap: 3rem;
+
+      img {
+        width: 1.7rem;
+      }
+    }
+
+    .copyright {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+
+  &-ac {
+    @extend .flex;
+    align-items: center;
+  }
+  &-jc {
+    @extend .flex;
+    justify-content: center;
+  }
+  &-ac-jc {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--c {
+    @extend .flex;
+    flex-direction: column;
+    &-ac {
+      @extend .flex--c;
+      align-items: center;
+    }
+    &-jc {
+      @extend .flex--c;
+      justify-content: center;
+    }
+    &-ac-jc {
+      @extend .flex--c;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.border-container {
+  & > * {
+    padding: 5.5rem 4rem;
+  }
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-repeat: no-repeat;
+
+  background-image: linear-gradient(
+      0deg,
+      transparent 5%,
+      $color-border 5%,
+      $color-border 95%,
+      transparent 95%
+    ),
+    // left
+    linear-gradient(
+        90deg,
+        transparent 5%,
+        $color-border 5%,
+        $color-border 55%,
+        transparent 55%
+      ),
+    // top
+    linear-gradient(
+        180deg,
+        transparent 15%,
+        $color-border 15%,
+        $color-border 95%,
+        transparent 95%
+      ),
+    // right
+    linear-gradient(
+        270deg,
+        transparent 5%,
+        $color-border 5%,
+        $color-border 95%,
+        transparent 95%
+      )
+      // bottom
+;
+}

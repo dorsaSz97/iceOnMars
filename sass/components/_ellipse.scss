@@ -1,0 +1,48 @@
+.ellipse {
+  position: absolute;
+  width: $ellipse-w;
+  height: $ellipse-h;
+  border-radius: 50%;
+  filter: blur(40px);
+  cursor: pointer;
+
+  transition: all 0.4s;
+  z-index: -1;
+
+  &--orange {
+    background: linear-gradient(
+      90deg,
+      $color-orange-dark-1 0%,
+      $color-orange-light-1 100%
+    );
+  }
+
+  &--blue {
+    background: linear-gradient(
+      90deg,
+      $color-blue-dark-2 0%,
+      $color-blue-light-1 50%,
+      $color-blue-dark-1 100%
+    );
+  }
+
+  &--red {
+    background: linear-gradient(
+      90deg,
+      $color-red-light-1 0%,
+      $color-red-light-2 100%
+    );
+  }
+
+  &--green {
+    background: linear-gradient(90deg, #799f0c 0%, #acbb78 100%);
+  }
+
+  &--purple {
+    background: linear-gradient(
+      90deg,
+      $color-purple-dark-1 0%,
+      $color-purple-dark-2 100%
+    );
+  }
+}

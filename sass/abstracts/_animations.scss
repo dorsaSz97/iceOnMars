@@ -1,0 +1,8 @@
+@keyframes upanddownDot {
+  0% {
+    transform: translate(-50%, -4px);
+  }
+  100% {
+    transform: translate(-50%, 4px);
+  }
+}
